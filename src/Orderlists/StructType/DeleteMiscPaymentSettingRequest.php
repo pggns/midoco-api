@@ -21,7 +21,7 @@ class DeleteMiscPaymentSettingRequest extends AbstractStructBase
      * - ref: MidocoMiscPaymentSetting
      * @var \Pggns\MidocoApi\Orderlists\StructType\CashPaymentSettingDTO[]
      */
-    protected array $MidocoMiscPaymentSetting;
+    protected array $MidocoMiscPaymentSetting = [];
     /**
      * Constructor method for DeleteMiscPaymentSettingRequest
      * @uses DeleteMiscPaymentSettingRequest::setMidocoMiscPaymentSetting()

@@ -34,7 +34,7 @@ class SaveConsentUnitsRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $disabledUnitName;
+    protected array $disabledUnitName = [];
     /**
      * Constructor method for SaveConsentUnitsRequest
      * @uses SaveConsentUnitsRequest::setConsentId()

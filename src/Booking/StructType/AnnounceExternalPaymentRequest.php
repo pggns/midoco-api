@@ -23,7 +23,7 @@ class AnnounceExternalPaymentRequest extends AbstractStructBase
      * - ref: mbm:ExternalPayment
      * @var \Pggns\MidocoApi\Booking\StructType\ExternalPayment[]
      */
-    protected array $ExternalPayment;
+    protected array $ExternalPayment = [];
     /**
      * The orderId
      * Meta information extracted from the WSDL

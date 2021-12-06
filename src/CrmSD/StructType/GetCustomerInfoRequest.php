@@ -21,7 +21,7 @@ class GetCustomerInfoRequest extends AbstractStructBase
      * - ref: CustomerInfo
      * @var \Pggns\MidocoApi\CrmSD\StructType\CustomerInfo[]
      */
-    protected array $CustomerInfo;
+    protected array $CustomerInfo = [];
     /**
      * Constructor method for GetCustomerInfoRequest
      * @uses GetCustomerInfoRequest::setCustomerInfo()

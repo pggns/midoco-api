@@ -21,7 +21,7 @@ class SaveMyTaskViewUnitsRequest extends AbstractStructBase
      * - ref: MidocoMyTaskViewUnit
      * @var \Pggns\MidocoApi\Workflow\StructType\MidocoMyTaskViewUnit[]
      */
-    protected array $MidocoMyTaskViewUnit;
+    protected array $MidocoMyTaskViewUnit = [];
     /**
      * Constructor method for SaveMyTaskViewUnitsRequest
      * @uses SaveMyTaskViewUnitsRequest::setMidocoMyTaskViewUnit()

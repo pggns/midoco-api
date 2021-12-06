@@ -21,7 +21,7 @@ class SaveMyTaskViewQueuesRequest extends AbstractStructBase
      * - ref: MidocoMyTaskViewQueue
      * @var \Pggns\MidocoApi\Workflow\StructType\MidocoMyTaskViewQueue[]
      */
-    protected array $MidocoMyTaskViewQueue;
+    protected array $MidocoMyTaskViewQueue = [];
     /**
      * Constructor method for SaveMyTaskViewQueuesRequest
      * @uses SaveMyTaskViewQueuesRequest::setMidocoMyTaskViewQueue()

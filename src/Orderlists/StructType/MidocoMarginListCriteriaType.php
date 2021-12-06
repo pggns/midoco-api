@@ -20,7 +20,7 @@ class MidocoMarginListCriteriaType extends AbstractStructBase
      * - minOccurs: 1
      * @var \Pggns\MidocoApi\Orderlists\StructType\MidocoMarginIntervalType[]
      */
-    protected array $MidocoMarginInterval;
+    protected array $MidocoMarginInterval = [];
     /**
      * The orgUnits
      * Meta information extracted from the WSDL

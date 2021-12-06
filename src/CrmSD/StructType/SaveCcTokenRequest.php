@@ -21,7 +21,7 @@ class SaveCcTokenRequest extends AbstractStructBase
      * - ref: MidocoCcToken
      * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoCcToken[]
      */
-    protected array $MidocoCcToken;
+    protected array $MidocoCcToken = [];
     /**
      * The ccMask
      * @var string|null

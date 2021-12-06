@@ -20,7 +20,7 @@ class MigrateFiskalyTssRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $UnitName;
+    protected array $UnitName = [];
     /**
      * The send_puk_mail
      * Meta information extracted from the WSDL

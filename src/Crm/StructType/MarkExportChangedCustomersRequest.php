@@ -21,7 +21,7 @@ class MarkExportChangedCustomersRequest extends AbstractStructBase
      * - ref: MidocoExportChangedCustomersLog
      * @var \Pggns\MidocoApi\Crm\StructType\ExportChangedCustomersLogDTO[]
      */
-    protected array $MidocoExportChangedCustomersLog;
+    protected array $MidocoExportChangedCustomersLog = [];
     /**
      * Constructor method for MarkExportChangedCustomersRequest
      * @uses MarkExportChangedCustomersRequest::setMidocoExportChangedCustomersLog()

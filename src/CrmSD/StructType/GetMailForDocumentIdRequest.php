@@ -21,7 +21,7 @@ class GetMailForDocumentIdRequest extends AbstractStructBase
      * - ref: MidocoDocumentBinary
      * @var \Pggns\MidocoApi\CrmSD\StructType\MidocoDocumentBinary[]
      */
-    protected array $MidocoDocumentBinary;
+    protected array $MidocoDocumentBinary = [];
     /**
      * The MidocoCrmCustomer
      * Meta information extracted from the WSDL

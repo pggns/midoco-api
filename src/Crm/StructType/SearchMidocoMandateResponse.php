@@ -21,7 +21,7 @@ class SearchMidocoMandateResponse extends AbstractStructBase
      * - ref: MidocoMandate
      * @var \Pggns\MidocoApi\Crm\StructType\MidocoMandate[]
      */
-    protected array $MidocoMandate;
+    protected array $MidocoMandate = [];
     /**
      * Constructor method for SearchMidocoMandateResponse
      * @uses SearchMidocoMandateResponse::setMidocoMandate()

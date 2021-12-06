@@ -21,7 +21,7 @@ class MarkExportChangedOrdersRequest extends AbstractStructBase
      * - ref: MidocoExportChangedOrdersLog
      * @var \Pggns\MidocoApi\Order\StructType\ExportChangedOrdersLogDTO[]
      */
-    protected array $MidocoExportChangedOrdersLog;
+    protected array $MidocoExportChangedOrdersLog = [];
     /**
      * Constructor method for MarkExportChangedOrdersRequest
      * @uses MarkExportChangedOrdersRequest::setMidocoExportChangedOrdersLog()

@@ -27,7 +27,7 @@ class SaveSupplierDisabledUnitsRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $disabledUnitName;
+    protected array $disabledUnitName = [];
     /**
      * Constructor method for SaveSupplierDisabledUnitsRequest
      * @uses SaveSupplierDisabledUnitsRequest::setSupplierId()

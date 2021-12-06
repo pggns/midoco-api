@@ -27,7 +27,7 @@ class DeleteSupplierDisabledUnitsRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $disabledUnitName;
+    protected array $disabledUnitName = [];
     /**
      * Constructor method for DeleteSupplierDisabledUnitsRequest
      * @uses DeleteSupplierDisabledUnitsRequest::setSupplierId()

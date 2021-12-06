@@ -20,7 +20,7 @@ class Unprocessed_Units extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $UnitName;
+    protected array $UnitName = [];
     /**
      * Constructor method for Unprocessed-Units
      * @uses Unprocessed_Units::setUnitName()

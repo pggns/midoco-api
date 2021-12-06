@@ -34,7 +34,7 @@ class DeleteConsentUnitsRequest extends AbstractStructBase
      * - minOccurs: 1
      * @var string[]
      */
-    protected array $disabledUnitName;
+    protected array $disabledUnitName = [];
     /**
      * Constructor method for DeleteConsentUnitsRequest
      * @uses DeleteConsentUnitsRequest::setConsentId()
