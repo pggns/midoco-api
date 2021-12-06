@@ -1,0 +1,25 @@
+{
+    "name": "pggns/php-midoco-api",
+	"type": "library",
+    "keywords" : ["php","api","midoco"],
+    "description": "Midoco API for use in PHP",
+	"authors" : [
+        {
+            "name": "pggns",
+            "email": "projects@pggns.de",
+            "role": "Owner"
+        },
+	],
+    "require": {
+        "php": ">=7.4",
+        "ext-dom": "*",
+        "ext-mbstring": "*",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pggns\\MidocoApi\\": "src",
+        }
+    }
+}

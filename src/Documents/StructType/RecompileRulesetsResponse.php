@@ -1,0 +1,101 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Api\Documents\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for RecompileRulesetsResponse StructType
+ * @subpackage Structs
+ */
+class RecompileRulesetsResponse extends AbstractStructBase
+{
+    /**
+     * The SystemRulesetCompiledResult
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: SystemRulesetCompiledResult
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[]
+     */
+    protected ?array $SystemRulesetCompiledResult = null;
+    /**
+     * Constructor method for RecompileRulesetsResponse
+     * @uses RecompileRulesetsResponse::setSystemRulesetCompiledResult()
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
+     */
+    public function __construct(?array $systemRulesetCompiledResult = null)
+    {
+        $this
+            ->setSystemRulesetCompiledResult($systemRulesetCompiledResult);
+    }
+    /**
+     * Get SystemRulesetCompiledResult value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[]
+     */
+    public function getSystemRulesetCompiledResult(): ?array
+    {
+        return $this->SystemRulesetCompiledResult;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setSystemRulesetCompiledResult method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setSystemRulesetCompiledResult method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateSystemRulesetCompiledResultForArrayConstraintsFromSetSystemRulesetCompiledResult(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $recompileRulesetsResponseSystemRulesetCompiledResultItem) {
+            // validation for constraint: itemType
+            if (!$recompileRulesetsResponseSystemRulesetCompiledResultItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult) {
+                $invalidValues[] = is_object($recompileRulesetsResponseSystemRulesetCompiledResultItem) ? get_class($recompileRulesetsResponseSystemRulesetCompiledResultItem) : sprintf('%s(%s)', gettype($recompileRulesetsResponseSystemRulesetCompiledResultItem), var_export($recompileRulesetsResponseSystemRulesetCompiledResultItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set SystemRulesetCompiledResult value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult[] $systemRulesetCompiledResult
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\RecompileRulesetsResponse
+     */
+    public function setSystemRulesetCompiledResult(?array $systemRulesetCompiledResult = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($systemRulesetCompiledResultArrayErrorMessage = self::validateSystemRulesetCompiledResultForArrayConstraintsFromSetSystemRulesetCompiledResult($systemRulesetCompiledResult))) {
+            throw new InvalidArgumentException($systemRulesetCompiledResultArrayErrorMessage, __LINE__);
+        }
+        $this->SystemRulesetCompiledResult = $systemRulesetCompiledResult;
+        
+        return $this;
+    }
+    /**
+     * Add item to SystemRulesetCompiledResult value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\RecompileRulesetsResponse
+     */
+    public function addToSystemRulesetCompiledResult(\Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult) {
+            throw new InvalidArgumentException(sprintf('The SystemRulesetCompiledResult property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\SystemRulesetCompiledResult, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->SystemRulesetCompiledResult[] = $item;
+        
+        return $this;
+    }
+}

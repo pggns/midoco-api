@@ -1,0 +1,803 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Api\Documents\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for MidocoLeisureMixedDetailType StructType
+ * @subpackage Structs
+ */
+class MidocoLeisureMixedDetailType extends TravelDetailDTO
+{
+    /**
+     * The MidocoFlightDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoFlightDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail[]
+     */
+    protected ?array $MidocoFlightDetail = null;
+    /**
+     * The MidocoAccomodationDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoAccomodationDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO[]
+     */
+    protected ?array $MidocoAccomodationDetail = null;
+    /**
+     * The MidocoCarDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoCarDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO[]
+     */
+    protected ?array $MidocoCarDetail = null;
+    /**
+     * The MidocoCruiseDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoCruiseDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO[]
+     */
+    protected ?array $MidocoCruiseDetail = null;
+    /**
+     * The MidocoInsuranceDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoInsuranceDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail[]
+     */
+    protected ?array $MidocoInsuranceDetail = null;
+    /**
+     * The MidocoBusDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoBusDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO[]
+     */
+    protected ?array $MidocoBusDetail = null;
+    /**
+     * The MidocoRailDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoRailDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO[]
+     */
+    protected ?array $MidocoRailDetail = null;
+    /**
+     * The MidocoTransferDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoTransferDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType[]
+     */
+    protected ?array $MidocoTransferDetail = null;
+    /**
+     * The MidocoGenericDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoGenericDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType[]
+     */
+    protected ?array $MidocoGenericDetail = null;
+    /**
+     * The MidocoEventDetail
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoEventDetail
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO[]
+     */
+    protected ?array $MidocoEventDetail = null;
+    /**
+     * Constructor method for MidocoLeisureMixedDetailType
+     * @uses MidocoLeisureMixedDetailType::setMidocoFlightDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoAccomodationDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoCarDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoCruiseDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoInsuranceDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoBusDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoRailDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoTransferDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoGenericDetail()
+     * @uses MidocoLeisureMixedDetailType::setMidocoEventDetail()
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail[] $midocoFlightDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO[] $midocoAccomodationDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO[] $midocoCarDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO[] $midocoCruiseDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail[] $midocoInsuranceDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO[] $midocoBusDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO[] $midocoRailDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType[] $midocoTransferDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType[] $midocoGenericDetail
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO[] $midocoEventDetail
+     */
+    public function __construct(?array $midocoFlightDetail = null, ?array $midocoAccomodationDetail = null, ?array $midocoCarDetail = null, ?array $midocoCruiseDetail = null, ?array $midocoInsuranceDetail = null, ?array $midocoBusDetail = null, ?array $midocoRailDetail = null, ?array $midocoTransferDetail = null, ?array $midocoGenericDetail = null, ?array $midocoEventDetail = null)
+    {
+        $this
+            ->setMidocoFlightDetail($midocoFlightDetail)
+            ->setMidocoAccomodationDetail($midocoAccomodationDetail)
+            ->setMidocoCarDetail($midocoCarDetail)
+            ->setMidocoCruiseDetail($midocoCruiseDetail)
+            ->setMidocoInsuranceDetail($midocoInsuranceDetail)
+            ->setMidocoBusDetail($midocoBusDetail)
+            ->setMidocoRailDetail($midocoRailDetail)
+            ->setMidocoTransferDetail($midocoTransferDetail)
+            ->setMidocoGenericDetail($midocoGenericDetail)
+            ->setMidocoEventDetail($midocoEventDetail);
+    }
+    /**
+     * Get MidocoFlightDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail[]
+     */
+    public function getMidocoFlightDetail(): ?array
+    {
+        return $this->MidocoFlightDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoFlightDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoFlightDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoFlightDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoFlightDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoFlightDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoFlightDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoFlightDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoFlightDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoFlightDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail[] $midocoFlightDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoFlightDetail(?array $midocoFlightDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoFlightDetailArrayErrorMessage = self::validateMidocoFlightDetailForArrayConstraintsFromSetMidocoFlightDetail($midocoFlightDetail))) {
+            throw new InvalidArgumentException($midocoFlightDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoFlightDetail = $midocoFlightDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoFlightDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoFlightDetail(\Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoFlightDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoFlightDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoFlightDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoAccomodationDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO[]
+     */
+    public function getMidocoAccomodationDetail(): ?array
+    {
+        return $this->MidocoAccomodationDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoAccomodationDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAccomodationDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoAccomodationDetailForArrayConstraintsFromSetMidocoAccomodationDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoAccomodationDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoAccomodationDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoAccomodationDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO[] $midocoAccomodationDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoAccomodationDetail(?array $midocoAccomodationDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoAccomodationDetailArrayErrorMessage = self::validateMidocoAccomodationDetailForArrayConstraintsFromSetMidocoAccomodationDetail($midocoAccomodationDetail))) {
+            throw new InvalidArgumentException($midocoAccomodationDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoAccomodationDetail = $midocoAccomodationDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoAccomodationDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoAccomodationDetail(\Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoAccomodationDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\AccomodationDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoAccomodationDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoCarDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO[]
+     */
+    public function getMidocoCarDetail(): ?array
+    {
+        return $this->MidocoCarDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoCarDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCarDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoCarDetailForArrayConstraintsFromSetMidocoCarDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoCarDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoCarDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoCarDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoCarDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoCarDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoCarDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoCarDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoCarDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO[] $midocoCarDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoCarDetail(?array $midocoCarDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoCarDetailArrayErrorMessage = self::validateMidocoCarDetailForArrayConstraintsFromSetMidocoCarDetail($midocoCarDetail))) {
+            throw new InvalidArgumentException($midocoCarDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoCarDetail = $midocoCarDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoCarDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoCarDetail(\Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCarDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CarDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoCarDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoCruiseDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO[]
+     */
+    public function getMidocoCruiseDetail(): ?array
+    {
+        return $this->MidocoCruiseDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoCruiseDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoCruiseDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoCruiseDetailForArrayConstraintsFromSetMidocoCruiseDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoCruiseDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoCruiseDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoCruiseDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoCruiseDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoCruiseDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoCruiseDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoCruiseDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoCruiseDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO[] $midocoCruiseDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoCruiseDetail(?array $midocoCruiseDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoCruiseDetailArrayErrorMessage = self::validateMidocoCruiseDetailForArrayConstraintsFromSetMidocoCruiseDetail($midocoCruiseDetail))) {
+            throw new InvalidArgumentException($midocoCruiseDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoCruiseDetail = $midocoCruiseDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoCruiseDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoCruiseDetail(\Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoCruiseDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\CruiseDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoCruiseDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoInsuranceDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail[]
+     */
+    public function getMidocoInsuranceDetail(): ?array
+    {
+        return $this->MidocoInsuranceDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoInsuranceDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoInsuranceDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoInsuranceDetailForArrayConstraintsFromSetMidocoInsuranceDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoInsuranceDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoInsuranceDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoInsuranceDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail[] $midocoInsuranceDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoInsuranceDetail(?array $midocoInsuranceDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoInsuranceDetailArrayErrorMessage = self::validateMidocoInsuranceDetailForArrayConstraintsFromSetMidocoInsuranceDetail($midocoInsuranceDetail))) {
+            throw new InvalidArgumentException($midocoInsuranceDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoInsuranceDetail = $midocoInsuranceDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoInsuranceDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoInsuranceDetail(\Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail) {
+            throw new InvalidArgumentException(sprintf('The MidocoInsuranceDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoInsuranceDetail, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoInsuranceDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoBusDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO[]
+     */
+    public function getMidocoBusDetail(): ?array
+    {
+        return $this->MidocoBusDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoBusDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoBusDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoBusDetailForArrayConstraintsFromSetMidocoBusDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoBusDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoBusDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoBusDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoBusDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoBusDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoBusDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoBusDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoBusDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO[] $midocoBusDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoBusDetail(?array $midocoBusDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoBusDetailArrayErrorMessage = self::validateMidocoBusDetailForArrayConstraintsFromSetMidocoBusDetail($midocoBusDetail))) {
+            throw new InvalidArgumentException($midocoBusDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoBusDetail = $midocoBusDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoBusDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoBusDetail(\Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoBusDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\BusDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoBusDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoRailDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO[]
+     */
+    public function getMidocoRailDetail(): ?array
+    {
+        return $this->MidocoRailDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoRailDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoRailDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoRailDetailForArrayConstraintsFromSetMidocoRailDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoRailDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoRailDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoRailDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoRailDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoRailDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoRailDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoRailDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoRailDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO[] $midocoRailDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoRailDetail(?array $midocoRailDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoRailDetailArrayErrorMessage = self::validateMidocoRailDetailForArrayConstraintsFromSetMidocoRailDetail($midocoRailDetail))) {
+            throw new InvalidArgumentException($midocoRailDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoRailDetail = $midocoRailDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoRailDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoRailDetail(\Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoRailDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\RailDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoRailDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoTransferDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType[]
+     */
+    public function getMidocoTransferDetail(): ?array
+    {
+        return $this->MidocoTransferDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoTransferDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoTransferDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoTransferDetailForArrayConstraintsFromSetMidocoTransferDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoTransferDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoTransferDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoTransferDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoTransferDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoTransferDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoTransferDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoTransferDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoTransferDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType[] $midocoTransferDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoTransferDetail(?array $midocoTransferDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoTransferDetailArrayErrorMessage = self::validateMidocoTransferDetailForArrayConstraintsFromSetMidocoTransferDetail($midocoTransferDetail))) {
+            throw new InvalidArgumentException($midocoTransferDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoTransferDetail = $midocoTransferDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoTransferDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoTransferDetail(\Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoTransferDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoTransferDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoTransferDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoGenericDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType[]
+     */
+    public function getMidocoGenericDetail(): ?array
+    {
+        return $this->MidocoGenericDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoGenericDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoGenericDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoGenericDetailForArrayConstraintsFromSetMidocoGenericDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoGenericDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoGenericDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoGenericDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoGenericDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoGenericDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoGenericDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoGenericDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoGenericDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType[] $midocoGenericDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoGenericDetail(?array $midocoGenericDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoGenericDetailArrayErrorMessage = self::validateMidocoGenericDetailForArrayConstraintsFromSetMidocoGenericDetail($midocoGenericDetail))) {
+            throw new InvalidArgumentException($midocoGenericDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoGenericDetail = $midocoGenericDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoGenericDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoGenericDetail(\Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType) {
+            throw new InvalidArgumentException(sprintf('The MidocoGenericDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoGenericDetailType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoGenericDetail[] = $item;
+        
+        return $this;
+    }
+    /**
+     * Get MidocoEventDetail value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO[]
+     */
+    public function getMidocoEventDetail(): ?array
+    {
+        return $this->MidocoEventDetail;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoEventDetail method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoEventDetail method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoEventDetailForArrayConstraintsFromSetMidocoEventDetail(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoLeisureMixedDetailTypeMidocoEventDetailItem) {
+            // validation for constraint: itemType
+            if (!$midocoLeisureMixedDetailTypeMidocoEventDetailItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO) {
+                $invalidValues[] = is_object($midocoLeisureMixedDetailTypeMidocoEventDetailItem) ? get_class($midocoLeisureMixedDetailTypeMidocoEventDetailItem) : sprintf('%s(%s)', gettype($midocoLeisureMixedDetailTypeMidocoEventDetailItem), var_export($midocoLeisureMixedDetailTypeMidocoEventDetailItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoEventDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoEventDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO[] $midocoEventDetail
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function setMidocoEventDetail(?array $midocoEventDetail = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoEventDetailArrayErrorMessage = self::validateMidocoEventDetailForArrayConstraintsFromSetMidocoEventDetail($midocoEventDetail))) {
+            throw new InvalidArgumentException($midocoEventDetailArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoEventDetail = $midocoEventDetail;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoEventDetail value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoLeisureMixedDetailType
+     */
+    public function addToMidocoEventDetail(\Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO) {
+            throw new InvalidArgumentException(sprintf('The MidocoEventDetail property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\EventDetailDTO, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoEventDetail[] = $item;
+        
+        return $this;
+    }
+}

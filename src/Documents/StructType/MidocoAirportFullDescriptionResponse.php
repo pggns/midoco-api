@@ -1,0 +1,101 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Api\Documents\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for MidocoAirportFullDescriptionResponse StructType
+ * @subpackage Structs
+ */
+class MidocoAirportFullDescriptionResponse extends AbstractStructBase
+{
+    /**
+     * The MidocoAirportFullDescription
+     * Meta information extracted from the WSDL
+     * - maxOccurs: unbounded
+     * - minOccurs: 0
+     * - ref: MidocoAirportFullDescription
+     * @var \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription[]
+     */
+    protected ?array $MidocoAirportFullDescription = null;
+    /**
+     * Constructor method for MidocoAirportFullDescriptionResponse
+     * @uses MidocoAirportFullDescriptionResponse::setMidocoAirportFullDescription()
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription[] $midocoAirportFullDescription
+     */
+    public function __construct(?array $midocoAirportFullDescription = null)
+    {
+        $this
+            ->setMidocoAirportFullDescription($midocoAirportFullDescription);
+    }
+    /**
+     * Get MidocoAirportFullDescription value
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription[]
+     */
+    public function getMidocoAirportFullDescription(): ?array
+    {
+        return $this->MidocoAirportFullDescription;
+    }
+    /**
+     * This method is responsible for validating the values passed to the setMidocoAirportFullDescription method
+     * This method is willingly generated in order to preserve the one-line inline validation within the setMidocoAirportFullDescription method
+     * @param array $values
+     * @return string A non-empty message if the values does not match the validation rules
+     */
+    public static function validateMidocoAirportFullDescriptionForArrayConstraintsFromSetMidocoAirportFullDescription(?array $values = []): string
+    {
+        if (!is_array($values)) {
+            return '';
+        }
+        $message = '';
+        $invalidValues = [];
+        foreach ($values as $midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem) {
+            // validation for constraint: itemType
+            if (!$midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription) {
+                $invalidValues[] = is_object($midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem) ? get_class($midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem) : sprintf('%s(%s)', gettype($midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem), var_export($midocoAirportFullDescriptionResponseMidocoAirportFullDescriptionItem, true));
+            }
+        }
+        if (!empty($invalidValues)) {
+            $message = sprintf('The MidocoAirportFullDescription property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+        }
+        unset($invalidValues);
+        
+        return $message;
+    }
+    /**
+     * Set MidocoAirportFullDescription value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription[] $midocoAirportFullDescription
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescriptionResponse
+     */
+    public function setMidocoAirportFullDescription(?array $midocoAirportFullDescription = null): self
+    {
+        // validation for constraint: array
+        if ('' !== ($midocoAirportFullDescriptionArrayErrorMessage = self::validateMidocoAirportFullDescriptionForArrayConstraintsFromSetMidocoAirportFullDescription($midocoAirportFullDescription))) {
+            throw new InvalidArgumentException($midocoAirportFullDescriptionArrayErrorMessage, __LINE__);
+        }
+        $this->MidocoAirportFullDescription = $midocoAirportFullDescription;
+        
+        return $this;
+    }
+    /**
+     * Add item to MidocoAirportFullDescription value
+     * @throws InvalidArgumentException
+     * @param \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription $item
+     * @return \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescriptionResponse
+     */
+    public function addToMidocoAirportFullDescription(\Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription $item): self
+    {
+        // validation for constraint: itemType
+        if (!$item instanceof \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription) {
+            throw new InvalidArgumentException(sprintf('The MidocoAirportFullDescription property can only contain items of type \Pggns\MidocoApi\Api\Documents\StructType\MidocoAirportFullDescription, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        }
+        $this->MidocoAirportFullDescription[] = $item;
+        
+        return $this;
+    }
+}

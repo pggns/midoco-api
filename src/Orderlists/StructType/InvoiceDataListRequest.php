@@ -1,0 +1,52 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Api\Orderlists\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for InvoiceDataListRequest StructType
+ * @subpackage Structs
+ */
+class InvoiceDataListRequest extends AbstractStructBase
+{
+    /**
+     * The MidocoInvoiceDataListCriteria
+     * Meta information extracted from the WSDL
+     * - ref: MidocoInvoiceDataListCriteria
+     * @var \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType|null
+     */
+    protected ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType $MidocoInvoiceDataListCriteria = null;
+    /**
+     * Constructor method for InvoiceDataListRequest
+     * @uses InvoiceDataListRequest::setMidocoInvoiceDataListCriteria()
+     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType $midocoInvoiceDataListCriteria
+     */
+    public function __construct(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType $midocoInvoiceDataListCriteria = null)
+    {
+        $this
+            ->setMidocoInvoiceDataListCriteria($midocoInvoiceDataListCriteria);
+    }
+    /**
+     * Get MidocoInvoiceDataListCriteria value
+     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType|null
+     */
+    public function getMidocoInvoiceDataListCriteria(): ?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType
+    {
+        return $this->MidocoInvoiceDataListCriteria;
+    }
+    /**
+     * Set MidocoInvoiceDataListCriteria value
+     * @param \Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType $midocoInvoiceDataListCriteria
+     * @return \Pggns\MidocoApi\Api\Orderlists\StructType\InvoiceDataListRequest
+     */
+    public function setMidocoInvoiceDataListCriteria(?\Pggns\MidocoApi\Api\Orderlists\StructType\MidocoInvoiceDataListCriteriaType $midocoInvoiceDataListCriteria = null): self
+    {
+        $this->MidocoInvoiceDataListCriteria = $midocoInvoiceDataListCriteria;
+        
+        return $this;
+    }
+}
