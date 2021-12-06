@@ -1,14 +1,14 @@
 {
     "name": "pggns/php-midoco-api",
 	"type": "library",
-    "keywords" : ["php","api","midoco"],
+    "keywords": ["php","api","midoco"],
     "description": "Midoco API for use in PHP",
-	"authors" : [
+	"authors": [
         {
             "name": "pggns",
             "email": "projects@pggns.de",
             "role": "Owner"
-        },
+        }
 	],
     "require": {
         "php": ">=7.4",
